@@ -7,7 +7,7 @@ const companyInfo = {
 
   whatsapp: "918928968560",
 
-  email: "chinmaytawde242@gmail.com",
+  email: "info@thegrowthlogistics.com",
 
   address:
     "Chakradhar Apartment, Mari Aai Mandir, Gothivali Gaon, Navi Mumbai, Thane, Maharashtra - 400701",
