@@ -114,15 +114,15 @@ function App() {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow-md z-50">
 
-        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-6 py-1 flex justify-between items-center">
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
 
             <img
               src="/logo/logo.png"
               alt="logo"
-              className="w-20 h-20 object-contain"
-            />
+              className="w-60 h-40 object-contain"
+             />
 
             <div>
 
