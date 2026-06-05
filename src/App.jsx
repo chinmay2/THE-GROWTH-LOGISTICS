@@ -44,60 +44,69 @@ function App() {
   };
 
   const services = [
-    {
-      title: "Ocean Freight",
-      icon: <FaShip />,
-      image:
-        "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop",
-      description:
-        "The Growth Logistics provides expert ocean freight forwarding solutions, seamlessly connecting your global supply chain across major international shipping lanes. We offer both FCL and LCL options with secure vessel space and optimized routing.",
-    },
+  {
+    title: "Ocean Freight",
+    icon: <FaShip />,
+    image:
+      "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "The Growth Logistics provides expert ocean freight forwarding solutions, seamlessly connecting your global supply chain across major international shipping lanes. We offer both Full Container Load (FCL) for maximum security and Less than Container Load (LCL) options to keep your smaller shipments cost-effective. By partnering with leading global ocean carriers, we secure dependable vessel space, flexible schedules, and optimized routing to handle everything from standard dry goods to oversized project cargo.",
+  },
 
-    {
-      title: "Air Freight",
-      icon: <FaPlane />,
-      image:
-        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
-      description:
-        "Reliable air freight services for urgent and time-sensitive cargo movement worldwide with fast transit times and dependable airline partnerships.",
-    },
+{
+  title: "Air Freight",
+  icon: <FaPlane />,
+  image:
+    "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
+  description:
+    "The Growth Logistics provides reliable air freight services for urgent and time-sensitive shipments worldwide. Through partnerships with major international airlines, we ensure priority handling, faster transit times, and secure cargo movement. Whether you require airport-to-airport or door-to-door delivery, our air logistics solutions are designed to keep your supply chain moving efficiently while maintaining complete shipment visibility and control.",
+},
 
-    {
-      title: "Transportation",
-      icon: <FaTruck />,
-      image:
-        "https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=2070&auto=format&fit=crop",
-      description:
-        "Domestic and regional transportation solutions with safe and timely delivery services including FTL and LTL logistics support.",
-    },
+  {
+    title: "Transportation",
+    icon: <FaTruck />,
+    image:
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "The Growth Logistics utilizes reliable domestic and regional transportation networks to keep your cargo moving efficiently and ensure timely delivery. Our comprehensive overland fleet supports Full Truckload (FTL) and Less-than-Truckload (LTL) shipping, tailored to your budget and timeline. From first-mile pickup to final-mile doorstep delivery, we leverage advanced route optimization and real-time tracking to guarantee your goods travel safely across highways and intermodal networks.",
+  },
 
-    {
-      title: "Custom Clearance",
-      icon: <FaFileAlt />,
-      image:
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
-      description:
-        "Fast and hassle-free customs clearance services ensuring smooth international cargo movement without delays.",
-    },
+  {
+    title: "Customs Clearance",
+    icon: <FaFileAlt />,
+    image:
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "We handle the complexities of international trade by managing the entire customs clearance process, ensuring full compliance and preventing costly border delays. Our dedicated team navigates regulatory requirements smoothly, allowing your shipments to cross international borders without friction.",
+  },
 
-    {
-      title: "Warehousing",
-      icon: <FaWarehouse />,
-      image:
-        "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop",
-      description:
-        "Secure and organized warehousing solutions with inventory management and distribution support for modern supply chains.",
-    },
+  {
+    title: "Warehousing",
+    icon: <FaWarehouse />,
+    image:
+      "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "To support your business's ongoing growth, we provide strategic, secure warehousing facilities optimized for modern inventory management, safe storage, and swift distribution. These facilities act as reliable hubs within your supply chain, keeping your products safe and ready for deployment.",
+  },
 
-    {
-      title: "Value-Added Service",
-      icon: <FaShippingFast />,
-      image:
-        "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2070&auto=format&fit=crop",
-      description:
-        "Comprehensive logistics support tailored for modern supply chain operations with customer-focused solutions.",
-    },
-  ];
+  {
+    title: "Cargo Insurance",
+    icon: <FaShieldAlt />,
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "Your investments are fully safeguarded at every stage of the journey with our comprehensive cargo insurance plans, offering total peace of mind against unforeseen transit risks. From stationary storage to active transport, your assets are protected by industry-leading coverage.",
+  },
+
+  {
+    title: "Value-Added Service",
+    icon: <FaShippingFast />,
+    image:
+      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2070&auto=format&fit=crop",
+    description:
+      "Comprehensive logistics support tailored for modern supply chain operations, providing customized solutions that improve efficiency, visibility, and overall business performance.",
+  },
+];
 
   return (
     <div className="bg-white text-gray-800 overflow-hidden">
@@ -481,7 +490,7 @@ function App() {
 
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {services.map((service, index) => (
 
@@ -583,8 +592,7 @@ function App() {
 
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: <FaFileAlt />,
